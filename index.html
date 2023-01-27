@@ -11,6 +11,7 @@
 <body>
   <h1>Form with Javascript validation</h1>
   <form id="form">
+    <progress id="progress" value="0" max="100"></progress>
     <label for="name">Name:</label>
     <input type="text" id="name">
 
@@ -27,14 +28,14 @@
       <option value="no">No</option>
     </select>
 
-    <label for="message">Mensagem:</label>
+    <label for="message">Message:</label>
     <textarea name="message" id="message"></textarea>
 
     <button type="submit">Send</button>
   </form>
 
   <!--Modal-->
-  <div id="modal"></div>
+  <div id="modal">
     <div class="modal-content">
       <span id="close-button">&times;</span>
       <p class="modal-message"></p>
